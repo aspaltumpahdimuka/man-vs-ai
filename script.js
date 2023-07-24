@@ -36,12 +36,12 @@ const playGame = () => {
     let aiChoice = getAIChoice()
     let playerChoice = parseInt(prompt("Pilih 0 - 2: "))
 
-    isPlayerWon(playerChoice, aiChoice)
+    let playerWon = isPlayerWon(playerChoice, aiChoice)
 
-    if (isPlayerWon) {
+    if (playerWon) {
         AiHP--
         console.log("Kamu Menang")
-    } else if (!isPlayerWon) {
+    } else if (!playerWon) {
         playerHP--
         console.log("Kamu Kalah")
     } else {
