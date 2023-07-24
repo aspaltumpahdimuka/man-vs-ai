@@ -40,8 +40,10 @@ const playGame = () => {
 
     if (isPlayerWon) {
         AiHP--
+        console.log("Kamu Menang")
     } else if (!isPlayerWon) {
         playerHP--
+        console.log("Kamu Kalah")
     } else {
         return "Seri"
     }
