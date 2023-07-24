@@ -12,7 +12,7 @@ graph TD;
     B-->|Random|E[AI]
     C-->|Random|E[AI]
     E-->|Random|F
-    F-->|Hasil|G[Menang/Kalah]
+    F-->|Hasil|G[Menang/Kalah/Seri]
     G-->|Nyawa - 1|H[Nyawa < 1]
     H-->|KALAH!|I[Selesai]
     G-->|Nyawa > 0|J[LANJUT]
